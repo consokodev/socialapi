@@ -1,0 +1,15 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  celery:
+    image: celery:4
+    restart: always
+    command: celery -A socialapi worker -l debug
+    depends_on:
+      - redis
+
+  redis:
+    image: "docker.io/redis:5.0-alpine"
+    ports: 
+      - "6379:6379"

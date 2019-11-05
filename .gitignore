@@ -1,0 +1,13 @@
+*.pyc
+*.swn
+*.swm
+*.swo
+*.swp
+*.csv
+*.out
+*db.sqlite3
+.vscode/
+.idea/
+env/
+*.log
+docker-compose-local.yaml
